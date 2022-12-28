@@ -16,7 +16,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--main-background);
-
+  margin: 1rem auto;
   min-height: 100vh;
 
   display: flex;
@@ -35,20 +35,13 @@ body {
   overflow: hidden;
 }
 .content_Image {
-  position: relative;
+  background-color: var(--soft-violet);
 }
 .container img {
   width: 100%;
   height: 100%;
-}
-.container .content_Image::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(157, 0, 255, 0.319);
-  position: absolute;
-  top: 0;
-  left: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .content_Info {
@@ -104,6 +97,6 @@ body {
     text-align: center;
   }
   .content_Info .info .box:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 }
